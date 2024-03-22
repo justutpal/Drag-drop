@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .container {
@@ -37,4 +37,24 @@ body {
     padding: 25px;
     background-color: orange;
     border-radius: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        width: 100%;
+    }
+
+    .left, .right {
+        background-color: rgba(51, 171, 23, 0.821);
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 200px) {
+    body {
+        display: none;
+    }
 }
