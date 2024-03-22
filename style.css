@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: navy;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.left, .right {
+    background-color: rgba(51, 171, 23, 0.821);
+    width: 300px;
+    height: 450px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.items {
+    margin: 15px 0;
+    padding: 25px;
+    background-color: orange;
+    border-radius: 15px;
+}
