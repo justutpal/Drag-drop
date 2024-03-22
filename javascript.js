@@ -7,26 +7,26 @@ let selected = null
 
 
 for (const item of items) {
-    item.addEventListener('touchstart', () => {
+    item.addEventListener('dragstart', () => {
         
         selected = item
     })
 }
 
-        right.addEventListener('touchmove', (e) => {
+        right.addEventListener('dragover', (e) => {
             e.preventDefault();
         })
 
-        right.addEventListener('touchend', (e) => {
+        right.addEventListener('drop', (e) => {
             right.appendChild(selected);
             selected = null
         })
 
-        left.addEventListener('touchmove', (e) => {
+        left.addEventListener('dragover', (e) => {
             e.preventDefault()
         })
         
-        left.addEventListener('touchend', (e) => {
+        left.addEventListener('drop', (e) => {
             left.appendChild(selected)
             selected = null;
         })
